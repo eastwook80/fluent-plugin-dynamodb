@@ -25,6 +25,7 @@ class DynamoDBOutput < Fluent::Plugin::Output
   config_param :dynamo_db_table, :string
   config_param :dynamo_db_endpoint, :string, :default => nil
   config_param :time_format, :string, :default => nil
+  config_param :localtime, :bool, :default => true
   config_param :add_time_attribute, :bool, :default => true
   config_param :detach_process, :integer, :default => 2
 
